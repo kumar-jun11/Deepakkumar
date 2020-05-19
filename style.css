@@ -1,0 +1,56 @@
+.weather-container {
+    background: #ccc;
+    text-align: center;
+}
+
+.weather {
+    font-size: 22px;
+    margin: 0;
+}
+
+.temp {
+    font-size: 60px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.vl {
+    border-left: 1px solid black;
+    height: auto;
+}
+
+.bg-green {
+    background-color: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #FFF;
+    z-index: 1;
+}
+
+h6 {
+    color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #fff;
+}
+
+body {
+    background: url(bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input[type=text],
+select {
+    width: 50%;
+    height: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: white;
+    display: inline-block;
+    color: black;
+    border: 3px solid aquamarine;
+    border-radius: 4px;
+    box-sizing: border-box;
+}

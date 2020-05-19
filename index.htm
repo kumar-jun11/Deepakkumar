@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/098ee03ef1.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="text-center">
+        <h2>
+            WEATHER TRACKER
+            <small class="text-muted">Using OpenWeatherMap API</small>
+        </h2>
+    </div>
+    <br><br><br>
+
+    <!--Container where the actual weather container lies-->
+    <div class="container-fluid">
+
+        <div class="row justify-content-center">
+            <!--The actual container-->
+
+            <div class="col-md-6 text-center bg-green " style="border-radius: 5px;border:none">
+                <input type="text" id="val" placeholder="Enter Country"> <button type="button" id="fetch" class="btn btn-lg btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <br>
+
+                <!--Temperature Display-->
+                <img id="icon"><br>
+                <p id="temp"></p>
+                <hr>
+
+                <!--This Division Displays Additional Weather Details-->
+                <div class="row">
+
+                    <!--v1 class defined in CSS to Display a Vertical Seperator Line-->
+                    <div class="vl"></div>
+
+                    <!--Display A Description of the Weather-->
+                    <div class="col sm-2">
+                        <h6>Weather:</h6>
+                        <p id="weather"></p>
+                    </div>
+
+                    <div class="vl"></div>
+
+                    <!--Displays Pressure-->
+                    <div class="col sm-2">
+                        <h6>Pressure:</h6>
+                        <b><p id="pr"></p></b>
+                    </div>
+                    <div class="vl"></div>
+
+                    <!--Displays Humidity-->
+                    <div class="col sm-2">
+                        <h6>Humidity:</h6>
+                        <p id="hum"></p>
+                    </div>
+                    <div class="vl"></div>
+
+                    <!--Displays Wind Speed-->
+                    <div class="col sm-2">
+                        <h6>Wind Speed:</h6>
+                        <p id="wi"></p>
+                    </div>
+
+
+                    <div class="vl"></div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
